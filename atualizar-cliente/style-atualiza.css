@@ -1,0 +1,75 @@
+/*  RESET  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+/*  Cabeçalho  */
+.cabecalho {
+    background-color: rgb(138, 255, 138);
+    width: 100%;
+    display: flex;
+    padding: 5px 0 5px 15%;
+    margin-bottom: 50px;
+}
+
+.titulo {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+}
+/*  Corpo  */
+.corpo {
+    width: 100%;
+    padding-left: 15%;
+}
+
+.campo-input {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-data {
+    width: 80%;
+    border-bottom: 3px solid rgb(138, 255, 138);
+    font-size: 24px;
+    height: 60px;
+    text-indent: 5px;
+}
+
+
+.sub-texto {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.input-data:focus ~ .sub-texto, .input-data:valid ~ .sub-texto {
+    color: rgb(52, 223, 52);
+    top: -20px;
+    left: 5px;
+    font-size: 20px;
+    transition: 0.8s;
+}
+
+.btn-submit {
+    background-color: rgb(52, 223, 52);
+    font-size: 20px;
+    width: 150px;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: rgba(0, 0, 0, .1);
+    border: 1px solid rgb(52, 223, 52);
+    color: rgb(52, 223, 52);
+}
